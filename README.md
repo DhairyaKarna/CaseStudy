@@ -11,6 +11,7 @@ The project aims to:
 2. Compute meaningful analytics such as branch density and air quality correlations.
 3. Build an API that supports dynamic querying and integrates with machine learning models for predictions.
 4. Enable natural language processing (NLP) for intuitive query handling.
+5. Flask-based scripts run indefinitely on EC2 instances, acting as APIs to access these different functionalities.
 
 ---
 
@@ -20,7 +21,7 @@ The project aims to:
 - **Scalable Design**: Architected for multi-source data integration using AWS best practices.
 - **Distributed EC2 Instances**:
   - Machine Learning, NLP, Analysis, and Integration functionalities run on separate EC2 instances to optimize performance and modularity.
-  - A central script is provided to access these functionalities seamlessly.
+  - A central flask/script is provided for each instance to access these functionalities seamlessly.
 - **Data Handling**: Supports structured and unstructured data, integrated using SQLite.
 - **Authentication**: Secure access via user authentication.
 
